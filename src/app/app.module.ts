@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CourseListComponent } from './courses/course-list.component';
@@ -25,6 +26,7 @@ import { CourseInfoComponent } from './courses/course-info.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     //Rotas especiais, path '' rota ele redireciona quando eu tenho o path vazio para a pagina de courses. A path '**' é quando nao encontra o caminho do url
     //eu mando ele para a pagina html error 404
     //a path: 'course' eu informou que na url /courses ele precisa carregar a lista de cursos.
